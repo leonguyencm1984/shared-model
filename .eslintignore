@@ -11,8 +11,6 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-build
-
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -143,15 +141,10 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-.DS_Store
-
 # End of https://www.toptal.com/developers/gitignore/api/node
 
-Dcokerfile
+Dockerfile
 Dockerfile.dev
-.dockerifnore
-.mpmrc
+.dockerignore
+.npmrc
 Jenkinsfile
-
-.editorconfig
-package-lock.json
