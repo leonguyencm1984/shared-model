@@ -1,16 +1,16 @@
 import { registerAs } from '@nestjs/config';
 import { GoogleConfig } from './config.type';
 import { IsOptional, IsString } from 'class-validator';
-import validateConfig from 'src/utils/validate-config';
+import validateConfig from '../utils/validate-config';
 
 class EnvironmentVariablesValidator {
   @IsString()
   @IsOptional()
-  GOOGLE_CLIENT_ID: string;
+  GOOGLE_CLIENT_ID!: string;
 
   @IsString()
   @IsOptional()
-  GOOGLE_CLIENT_SECRET: string;
+  GOOGLE_CLIENT_SECRET!: string;
 }
 
 export default registerAs<GoogleConfig>('google', () => {

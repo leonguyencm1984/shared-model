@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsOptional, MinLength, Validate } from 'class-validator';
-import { IsExist } from '../utils/validators/is-exists.validator';
-import { FileEntity } from '../files/entities/file.entity';
+import { IsExist } from '../../utils/validators/is-exists.validator';
+import { FileEntity } from '../../entities/file.entity';
 
 export class UpdateDto {
   @ApiProperty({ type: () => FileEntity })
@@ -30,5 +30,5 @@ export class UpdateDto {
   @ApiProperty()
   @IsOptional()
   @IsNotEmpty({ message: 'mustBeNotEmpty' })
-  oldPassword: string;
+  oldPassword?: string;
 }

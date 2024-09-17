@@ -15,7 +15,10 @@ module.exports = () => ({
           esmodules: isESM ? true : undefined,
           chrome: 70,
         },
-      },
-    ],
+      }
+    ]
   ],
+  plugins: [
+    ["@babel/plugin-proposal-decorators", {"legacy": true}]
+  ]
 });

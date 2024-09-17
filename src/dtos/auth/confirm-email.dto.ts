@@ -4,5 +4,5 @@ import { IsNotEmpty } from 'class-validator';
 export class ConfirmEmailDto {
   @ApiProperty()
   @IsNotEmpty()
-  hash: string;
+  hash!: string;
 }

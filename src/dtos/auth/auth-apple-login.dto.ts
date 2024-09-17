@@ -4,7 +4,7 @@ import { Allow, IsNotEmpty } from 'class-validator';
 export class AuthAppleLoginDto {
   @ApiProperty({ example: 'abc' })
   @IsNotEmpty()
-  idToken: string;
+  idToken!: string;
 
   @Allow()
   @ApiProperty({ required: false })

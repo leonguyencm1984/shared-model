@@ -1,8 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, Validate } from 'class-validator';
-import { IsExist } from '../utils/validators/is-exists.validator';
+import { IsExist } from '../../utils/validators/is-exists.validator';
 import { Transform } from 'class-transformer';
-import { lowerCaseTransformer } from 'src/utils/transformers/lower-case.transformer';
+import { lowerCaseTransformer } from '../../utils/transformers/lower-case.transformer';
 
 export class EmailLoginDto {
   @ApiProperty({ example: 'test1@example.com' })
@@ -10,9 +10,9 @@ export class EmailLoginDto {
   @Validate(IsExist, ['User'], {
     message: 'emailNotExists',
   })
-  email: string;
+  email!: string;
 
   @ApiProperty()
   @IsNotEmpty()
-  password: string;
+  password!: string;
 }
