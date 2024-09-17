@@ -5,7 +5,7 @@ import { EntityCondition } from './entity-condition.type';
 import { MaybeType } from './maybe.type';
 import { NullableType } from './nullable.type';
 import { OrNeverType } from './or-never.type';
-
+import { IPaginationOptions } from './pagination-options';
 
 export {
     JwtPayloadType,
@@ -15,5 +15,6 @@ export {
     EntityCondition,
     MaybeType,
     NullableType,
-    OrNeverType
+    OrNeverType,
+    IPaginationOptions
 }

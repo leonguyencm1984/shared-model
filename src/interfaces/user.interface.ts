@@ -14,16 +14,16 @@ interface UserPayloadDetail {
     photo: string;
     provider: string;
     socialId: string;
-    status: Status
-    role: Role;
+    status: IUserStatus
+    role: IRole;
 }
 
-interface Status {
+interface IUserStatus {
     id: string;
     name: string
 }
 
-interface Role {
+interface IRole {
     id: string;
     name: string;
 }
@@ -31,6 +31,6 @@ interface Role {
 export {
     UserPayload,
     UserPayloadDetail,
-    Status,
-    Role
+    IUserStatus,
+    IRole
 }

@@ -1,5 +1,5 @@
 {
-    "version": "0.3",
+    "version": "0.4.4",
     "license": "UNLICENSED",
     "types": "./src/index.d.ts",
     "description": "Shared Models library for Trip Planner",
@@ -43,7 +43,7 @@
         "@nestjs/common": "^10.4.3",
         "@nestjs/config": "3.2.3",
         "@nestjs/core": "^10.4.3",
-        "@nestjs/jwt": "10.0.3",
+        "@nestjs/jwt": "10.2.0",
         "@nestjs/passport": "10.0.3",
         "@nestjs/platform-express": "^10.4.3",
         "@nestjs/swagger": "^7.4.2",
