@@ -1,5 +1,5 @@
 {
-    "version": "0.4.5",
+    "version": "0.4.6",
     "license": "UNLICENSED",
     "types": "./src/index.d.ts",
     "description": "Shared Models library for Trip Planner",
@@ -47,7 +47,7 @@
         "@nestjs/passport": "10.0.3",
         "@nestjs/platform-express": "^10.4.3",
         "@nestjs/swagger": "^7.4.2",
-        "@nestjs/typeorm": "^7.0.0",
+        "@nestjs/typeorm": "^7.1.5",
         "@types/multer-s3": "^3.0.0",
         "apple-signin-auth": "1.7.5",
         "bcryptjs": "2.4.3",
@@ -72,7 +72,7 @@
         "source-map-support": "0.5.21",
         "swagger-ui-express": "4.6.3",
         "twitter": "^1.1.0",
-        "typeorm": "0.3.16",
+        "typeorm": "^0.2.7",
         "typescript": "^5.4.5"
     },
     "devDependencies": {
